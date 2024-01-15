@@ -1,0 +1,431 @@
+ 1015  mkdir course-repositories
+ 1016  cd course-repositories
+ 1017  ls
+ 1018  git clone https://github.com/arjun-multiverz/GitHub-101.git
+ 1019  ls
+ 1020  rmdir GitHub-101
+ 1021  rmdir -a GitHub-101
+ 1022  ls
+ 1023  rm -rf GitHub-101
+ 1024  ls
+ 1025  git clone git@github.com:arjun-multiverz/GitHub-101.git
+ 1026  ls
+ 1027  cd GitHub-101
+ 1028  ls -a
+ 1029  ls
+ 1030  ll
+ 1031  ls -al
+ 1032  ls .git
+ 1033  cd ..
+ 1034  ls
+ 1035  rm -rf GitHub-101
+ 1036  ls
+ 1037  ls -al
+ 1038  ls -a
+ 1039  cd GitHub-101
+ 1040  mkdir GitHub-101
+ 1041  ls
+ 1042  cd GitHub-101/
+ 1043  ls
+ 1044  vim first_file.txt
+ 1045  open first_file.txt
+ 1046  ls
+ 1047  vim first_file.txt
+ 1048  ls
+ 1049  open first_file.txt
+ 1050  vim first_file.txt
+ 1051  open first_file.txt
+ 1052  git init
+ 1053  ls
+ 1054  ls -a
+ 1055  git status
+ 1056  vim second_file.py
+ 1057  git status
+ 1058  ls 
+ 1059  ls -a
+ 1060  git add first_file.txt
+ 1061  git status
+ 1062  git rm --cached first_file.txt
+ 1063  git status
+ 1064  git add .
+ 1065  git status
+ 1066  git commit -m "First Commit"
+ 1067  git status
+ 1068  git remote add origin git@github.com:arjun-multiverz/GitHub-101.git
+ 1069  git status
+ 1070  git branch -M main
+ 1071  git push -u origin main
+ 1072  clear
+ 1073  ls
+ 1074  vim second_file.py
+ 1075  git status
+ 1076  python second_file.py
+ 1077  git add .
+ 1078  git status
+ 1079  git restore --staged second_file.py
+ 1080  git status
+ 1081  git restore second_file.py
+ 1082  git status
+ 1083  vim second_file.py
+ 1084  vim second_file.py
+ 1085  clear
+ 1086  vim second_file.py
+ 1087  git add .
+ 1088  git commit -m "added print_hello_world function"
+ 1089  git log
+ 1090  git push
+ 1091  git log
+ 1092  git status
+ 1093  clear
+ 1094  git log --all --graph --decorate --oneline
+ 1095  git log
+ 1096  git log --all --graph --decorate --oneline
+ 1097  clear
+ 1098  git config --global alias.history "log --all --graph --decorate --oneline"
+ 1099  git history
+ 1100  vim third_file.txt
+ 1101  git status
+ 1102  git add .
+ 1103  git commit -m "third_file.txt was added"
+ 1104  git status
+ 1105  git log
+ 1106  git history
+ 1107  ls
+ 1108  git checkout 9df31795238944d8d97922d402abdd016446ea30
+ 1109  git log
+ 1110  git status
+ 1111  ls
+ 1112  git checkout -b old-commit
+ 1113  git branch
+ 1114  git status
+ 1115  git status
+ 1116  git log
+ 1117  git checkout master
+ 1118  git checkout main
+ 1119  git status
+ 1120  ls
+ 1121  git log
+ 1122  git reset --hard 9df31795238944d8d97922d402abdd016446ea30
+ 1123  git status
+ 1124  git log
+ 1125  vim third_file.txt
+ 1126  ls
+ 1127  git status
+ 1128  git add .
+ 1129  git commit -m "third_file.txt was added"
+ 1130  git log
+ 1131  vim fourth_file.txt
+ 1132  git status
+ 1133  git add .
+ 1134  git commit -m "fourth_file.txt was added"
+ 1135  git log
+ 1136  git history
+ 1137  git push
+ 1138  git history
+ 1139  clear
+ 1140  git log
+ 1141  git revert 09564681f76799abb100c4fad3157de67d46e2d9 829e2f835ba8c0543201e97c654c3e76d672ecff
+ 1142  git status
+ 1143  git log
+ 1144  git push
+ 1145  clear
+ 1146  git status
+ 1147  ls
+ 1148  vim second_file.py
+ 1149  git status
+ 1150  git diff second_file.py
+ 1151  git add .
+ 1152  git commit -m "updated second_file.py"
+ 1153  git log
+ 1154  git diff HEAD..origin/main
+ 1155  clear
+ 1156  git branch
+ 1157  git checkout -b my-new-branch
+ 1158  git log
+ 1159  git branch
+ 1160  clear
+ 1161  vim a_new_file_in_the_new_branch.txt
+ 1162  git status
+ 1163  git add .
+ 1164  git commit -m "a new file is added"
+ 1165  git log
+ 1166  git checkout main
+ 1167  ls
+ 1168  git branch
+ 1169  git checkout my-new-branch
+ 1170  ls
+ 1171  git status
+ 1172  git push
+ 1173  git push --set-upstream origin my-new-branch
+ 1174  git branch
+ 1175  ls
+ 1176  vim a_new_file_in_the_new_branch.txt
+ 1177  ls
+ 1178  git status
+ 1179  vim second_file.py
+ 1180  git add .
+ 1181  git commit -m "added name parameter"
+ 1182  git push
+ 1183  clear
+ 1184  git branch
+ 1185  git checkout main
+ 1186  git branch
+ 1187  git branch -d my-new-branch
+ 1188  git branch
+ 1189  ls
+ 1190  git branch
+ 1191  git pull
+ 1192  ls
+ 1193  vim fourth_file.txt
+ 1194  git status
+ 1195  git add .
+ 1196  git commit -m "fourth file has been added"
+ 1197  git status
+ 1198  vim fourth_file.txt
+ 1199  git status
+ 1200  git add .
+ 1201  git commit -m "fixed a mistake in fourth_file.txt"
+ 1202  git status
+ 1203  vim fourth_file.txt
+ 1204  git add .
+ 1205  git commit -m "added occupation into fourth_file.txt"
+ 1206  git log
+ 1207  git log
+ 1208  clear
+ 1209  git log
+ 1210  git rebase -i HEAD~3
+ 1211  git log
+ 1212  git checkout -b my-amazing-feature
+ 1213  git branch
+ 1214  ls
+ 1215  vim fifth_file.txt
+ 1216  git status
+ 1217  git add .
+ 1218  git commit -m "fifth file was added"
+ 1219  git branhc
+ 1220  git branch
+ 1221  git checkout master
+ 1222  git checkout main
+ 1223  git branch
+ 1224  ls
+ 1225  git checkout -b another-amazing-feature
+ 1226  git branch
+ 1227  ls
+ 1228  vim my_amazing_feature.py
+ 1229  ls
+ 1230  git add .
+ 1231  git commit -m "amazing feature is added"
+ 1232  git log
+ 1233  clear
+ 1234  ls
+ 1235  git branch
+ 1236  git push --set-upstream origin my_amazing-feature
+ 1237  git push --set-upstream origin my-amazing-feature
+ 1238  git branch
+ 1239  git push --set-upstream origin another-amazing-feature
+ 1240  git branch
+ 1241  git checkout my-amazing-feature
+ 1242  ls
+ 1243  git fetch origin
+ 1244  ls
+ 1245  git checkout main
+ 1246  ls
+ 1247  git rebase origin/main
+ 1248  ls
+ 1249  git checkout my-amazing-feature
+ 1250  ls
+ 1251  git rebase origin/main
+ 1252  ls
+ 1253  git branch
+ 1254  git checkout main
+ 1255  ls
+ 1256  git checkout my-amazing-feature
+ 1257  git log
+ 1258  git branch
+ 1259  git push --set-upstream my-amazing-feature
+ 1260  git push --set-upstream origin my-amazing-feature
+ 1261  ls
+ 1262  git log
+ 1263  git push --set-upstream origin my-amazing-feature
+ 1264  git pull
+ 1265  git branch
+ 1266  git branch -d old-commit
+ 1267  git branch -d another-amazing-feature
+ 1268  git branch -d my-amazing-feature
+ 1269  git checkout main
+ 1270  git branch -d my-amazing-feature
+ 1271  git branch -D my-amazing-feature
+ 1272  git branch
+ 1273  git checkout -b my-amazing-feature
+ 1274  vim fifth_file.txt
+ 1275  git branch
+ 1276  git add .
+ 1277  git commit -m "fifth file was added"
+ 1278  git checkout main
+ 1279  ls
+ 1280  rm -rf my_amazing_feature.py
+ 1281  ls
+ 1282  git status
+ 1283  git add .
+ 1284  git commit -m "deleted file"
+ 1285  git status
+ 1286  ls
+ 1287  git checkout -b another-amazing-feature
+ 1288  vim another-feature.py
+ 1289  git add . 
+ 1290  git commit -m "amazing feature is added"
+ 1291  ls
+ 1292  git checkout my-amazing-feature
+ 1293  git branch
+ 1294  ls
+ 1295  clear
+ 1296  git branch
+ 1297  git checkout another-amazing-feature
+ 1298  ls
+ 1299  git push --set-upstream origin another-amazing-feature
+ 1300  git checkout my-amazing-feature
+ 1301  ls
+ 1302  rm my_amazing_feature.py
+ 1303  ls
+ 1304  git status
+ 1305  git add .
+ 1306  git commit -m "deleted file to start new"
+ 1307  git status
+ 1308  clear
+ 1309  ls
+ 1310  git branch
+ 1311  git log
+ 1312  clear
+ 1313  git fetch origin
+ 1314  ls
+ 1315  git rebase origin/main
+ 1316  ls
+ 1317  git log
+ 1318  clear
+ 1319  git status
+ 1320  git branch
+ 1321  git push --set-upstream origin my-amazing-feature
+ 1322  ls
+ 1323  git checkout main
+ 1324  ls
+ 1325  git pull
+ 1326  ls
+ 1327  git branch -d my-amazing-feature
+ 1328  git branch
+ 1329  git branch -d another-amazing-feature
+ 1330  git branch
+ 1331  git checkout -b git-stash
+ 1332  git branch
+ 1333  vim new-file-for-learning-git-stash.txt
+ 1334  git status
+ 1335  git add .
+ 1336  git commit -m "new file for git stash"
+ 1337  git status
+ 1338  vim new-file-for-learning-git-stash.txt
+ 1339  git status
+ 1340  git checkout main
+ 1341  git branch
+ 1342  git status
+ 1343  git stash
+ 1344  git status
+ 1345  git stash list
+ 1346  vim new-file-for-learning-git-stash.txt
+ 1347  clear
+ 1348  git checkout main
+ 1349  vim
+ 1350  vim fifth_file.txt
+ 1351  vim
+ 1352  git branch
+ 1353  git checkout git-stash
+ 1354  git branch
+ 1355  git stash list
+ 1356  git stash pop
+ 1357  git stash list
+ 1358  git status
+ 1359  vim new-file-for-learning-git-stash.txt
+ 1360  git stash push -m "my_stash_1"
+ 1361  git stash list
+ 1362  vim new-file-for-learning-git-stash.txt
+ 1363  ls
+ 1364  vim another-feature.py
+ 1365  git status
+ 1366  git stash list
+ 1367  git stash push -m "my_stash_2"
+ 1368  git status
+ 1369  clear
+ 1370  git stash list
+ 1371  git stash pop stash@{1}
+ 1372  git stash list
+ 1373  git stash pop stash@{0}
+ 1374  git status
+ 1375  git reset --hard
+ 1376  git status
+ 1377  git checkout master
+ 1378  git branch -d git-stash
+ 1379  git branch -D git-stash
+ 1380  git branch
+ 1381  git checkout main
+ 1382  git branch -d git-branch
+ 1383  git branch -d git-stash
+ 1384  git branch -D git-stash
+ 1385  git status
+ 1386  git branch
+ 1387  clear
+ 1388  git status
+ 1389  clear
+ 1390  git branch
+ 1391  clear
+ 1392  git log
+ 1393  clear
+ 1394  git tag -a v0.1.1 -m "the initial version of the package"
+ 1395  git log
+ 1396  clear
+ 1397  git log
+ 1398  git tag
+ 1399  clear
+ 1400  vim fifth_file.txt
+ 1401  git status
+ 1402  git add .
+ 1403  git commit -m "introduced some new change"
+ 1404  git status
+ 1405  clear
+ 1406  git tag v0.1.2
+ 1407  git log
+ 1408  clear
+ 1409  git status
+ 1410  git push --follow-tags
+ 1411  git checkout -b cherry-pick-branch
+ 1412  git branch
+ 1413  ls
+ 1414  vim a_new_file_in_the_new_branch.txt
+ 1415  clear
+ 1416  git status
+ 1417  git add .
+ 1418  git commit -m "new file in the new branch was modified"
+ 1419  git status
+ 1420  vim fifth_file.txt
+ 1421  git add .
+ 1422  git commit -m "modified fifth file for cherry picking"
+ 1423  git status
+ 1424  clear
+ 1425  vim first_file.txt
+ 1426  git add .
+ 1427  git commit -m "modified first file for cherry pick"
+ 1428  git log
+ 1429  git checkout main
+ 1430  git branch
+ 1431  git cherry-pick 69a0f2642d933d9a3ca76797da4ac1e12c983997
+ 1432  git status
+ 1433  git log
+ 1434  vim fifth_file.txt
+ 1435  clear
+ 1436  touch git-commands.txt
+ 1437  open git-commands.txt
+ 1438  cat ~/.bash_history
+ 1439  cat ~/.zsh_history
+ 1440  history 10
+ 1441  history 1000
+ 1442  echo history 1000 > git-commands.txt
+ 1443  open git-commands.txt
+ 1444  cat history 1000 > git-commands.txt
+ 1445  history 1
